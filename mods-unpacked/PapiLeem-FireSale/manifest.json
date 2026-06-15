@@ -1,0 +1,82 @@
+{
+	"name": "FireSale",
+	"namespace": "PapiLeem",
+	"version_number": "1.0.0",
+	"description": "Random flash-sale shop phase: occasionally a shop becomes a FIRE SALE - everything 90% off, 3 free rerolls, and a 30 second countdown before prices snap back up.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"optional_dependencies": [],
+			"authors": [
+				"PapiLeem"
+			],
+			"compatible_mod_loader_version": ["6.2.0"],
+			"compatible_game_version": ["1.1.13.1"],
+			"config_schema": {
+				"type": "object",
+				"properties": {
+					"chance_percent": {
+						"type": "number",
+						"title": "Trigger Chance (%)",
+						"description": "Chance each shop opening becomes a Fire Sale (0 disables).",
+						"default": 100,
+						"minimum": 0,
+						"maximum": 100
+					},
+					"duration_seconds": {
+						"type": "number",
+						"title": "Sale Duration (seconds)",
+						"description": "How long the Fire Sale lasts before prices revert.",
+						"default": 20,
+						"minimum": 5,
+						"maximum": 120
+					},
+					"discount_percent": {
+						"type": "integer",
+						"title": "Discount (%)",
+						"description": "How much off everything during the sale (90 = 90% off).",
+						"default": 90,
+						"minimum": 1,
+						"maximum": 99
+					},
+					"free_rerolls": {
+						"type": "integer",
+						"title": "Free Rerolls",
+						"description": "Number of free rerolls granted for the duration of the sale.",
+						"default": 3,
+						"minimum": 0,
+						"maximum": 20
+					},
+					"min_wave": {
+						"type": "integer",
+						"title": "Minimum Wave",
+						"description": "Earliest wave a Fire Sale can trigger.",
+						"default": 2,
+						"minimum": 1,
+						"maximum": 20
+					},
+					"sfx_enabled": {
+						"type": "boolean",
+						"title": "Sound Effects",
+						"description": "Play the trigger sting and countdown ticks.",
+						"default": true
+					},
+					"particles_enabled": {
+						"type": "boolean",
+						"title": "Particles",
+						"description": "Show coin-burst particles during the sale.",
+						"default": true
+					},
+					"intro_flourish_enabled": {
+						"type": "boolean",
+						"title": "Intro Flourish",
+						"description": "Play the flash + slam-in banner + shop shake when a sale starts.",
+						"default": true
+					}
+				}
+			}
+		}
+	}
+}
