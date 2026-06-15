@@ -40,7 +40,7 @@ Your selling/recycling value is never discounted, and your own earned free rerol
 
 ## Languages
 
-English.
+English, French, Spanish, German, Russian, Portuguese, Polish, Italian, Turkish, Chinese (Simplified & Traditional), Japanese, and Korean.
 
 ## Installation
 Just hit Subscribe, and the mod will be added to your game automatically. No setup required.
