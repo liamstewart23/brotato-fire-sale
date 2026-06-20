@@ -1,7 +1,7 @@
 {
 	"name": "FireSale",
 	"namespace": "PapiLeem",
-	"version_number": "1.0.0",
+	"version_number": "1.0.1",
 	"description": "Random flash-sale shop phase: occasionally a shop becomes a FIRE SALE - everything 90% off, 3 free rerolls, and a 30 second countdown before prices snap back up.",
 	"website_url": "",
 	"dependencies": [],
@@ -21,7 +21,7 @@
 						"type": "number",
 						"title": "Trigger Chance (%)",
 						"description": "Chance each shop opening becomes a Fire Sale (0 disables).",
-						"default": 100,
+						"default": 8,
 						"minimum": 0,
 						"maximum": 100
 					},
